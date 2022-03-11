@@ -1,2 +1,3 @@
 # loading-screen
-loads you money
+give you bit coin after 24 hours
+
