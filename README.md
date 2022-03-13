@@ -1,3 +1,2 @@
-# loading-screen
-give you bit coin after 24 hours
-
+<h1 align="center"><code>loading-screen</code></h1>
+What does it do? Only one way to find out...
